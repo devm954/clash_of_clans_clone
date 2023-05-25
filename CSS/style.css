@@ -40,7 +40,7 @@ header {
 }
 
 .navigation ul li {
-    transition: ease .4s;
+    transition: ease-in .4s;
 }
 
 .navigation ul li:hover {
@@ -92,5 +92,50 @@ header {
     align-items: center;
     gap: 2rem;
     height: 35vh;
+}
+
+.design{
+    height: 100vh;
+    background-image: url("background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.design .left{
+    max-width: 50%;
+}
+
+.design .left #man {
+    position: relative;
+    left: 60%;
+    width: 15vw;
+    top: -280px;
+}
+.design .left #dragon{
+    position: relative;
+    top: -150px;
+    left: 50px;
+    scale: 1.2;
+}
+
+.design .right{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.design .right img{
+    width: 35vw;
+}
+
+.design .right h2{
+    color: rgb(209, 192, 93);
+    font-size: 2rem;
 }
 
