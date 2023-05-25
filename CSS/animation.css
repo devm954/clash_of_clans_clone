@@ -1,1 +1,49 @@
 
+.design .left #dragon{
+    animation: fly 2s ease-in-out 1;
+}
+
+.design .left #man{
+    animation: run 2s ease-in-out 1 forwards;
+}
+
+.design .right img{
+    animation: emerge 2s ease-in-out infinite;
+}
+
+@keyframes fly{
+    from{
+        top: -822px;
+        left: -630px;
+    }
+
+    to{
+        top: -150px;
+        left: 50px;
+    }
+}
+
+@keyframes run{
+    0%{
+        left: 60%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@keyframes emerge{
+    0%{
+        visibility: hidden;
+    }
+    20%{
+        visibility: visible;
+    }
+    60%{
+        scale: 1.15;
+    }
+    100%{
+        scale: 1;
+    }
+
+}
